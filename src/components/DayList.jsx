@@ -8,8 +8,8 @@ const DayList = (props) => {
       key={singleDay.id} 
       name={singleDay.name} 
       spots={singleDay.spots} 
-      selected={singleDay.name === props.day}
-      setDay={props.setDay}
+      selected={singleDay.name === props.value}
+      setDay={props.onChange}
      />
     );
   });
